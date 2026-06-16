@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>STOC Advisory | Cover Page Samples - U.S. Commercial Landscaping Market Report 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════
+   A4: 210mm × 297mm - 5 cover-page variations
+   STOC Advisory · U.S. Commercial Landscaping Market Report 2026
+   Image placeholders: reportcover.1 … reportcover.5
+   ═══════════════════════════════════════════════════════════ */
+
+@page { size: 210mm 297mm; margin: 0; }
+@media print {
+  body { background: none; padding: 0; gap: 0; }
+  .page { box-shadow: none; page-break-after: always; break-after: page; }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+a { color: inherit; text-decoration: none; }
+
+:root {
+  --navy:   #0D1B2F;
+  --white:  #FFFFFF;
+  --black:  #111111;
+  --dark:   #222222;
+  --mid:    #3F4752;
+  --gray:   #5F6B7A;
+  --rule:   #CCCCCC;
+  --bg:     #DEDAD4;
+  --accent: #1275B0;
+  --rust:   #9AB0C8;
+}
+
+body {
+  background: var(--bg);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  padding: 13mm 0 21mm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11mm;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  min-height: 297mm;
+  max-height: 297mm;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 1mm 7mm rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+}
+
+/* sample caption strip - screen only, not part of cover */
+.sample-tag {
+  position: absolute;
+  top: 8px; right: 12px;
+  z-index: 50;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.0);
+}
+
+/* generic image-placeholder fallback */
+.ph {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 12px;
+  background: #1B3550;
+}
+.ph svg { opacity: 0.5; }
+.ph-lbl {
+  font-size: 8px; color: rgba(255,255,255,0.30);
+  text-transform: uppercase; letter-spacing: 2px;
+  font-weight: 600;
+}
+.cover-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+/* ══════════════════════ COVER 1 - ORIGINAL STYLE (kept as-is) ══════════════════════ */
+.c1 { width: 100%; height: 100%; background: var(--white); position: relative; }
+.c1-logo {
+  position: absolute; top: 30px; left: 36px;
+  display: flex; align-items: center; gap: 10px; z-index: 10;
+}
+.c1-photo {
+  position: absolute; top: 105px; left: 32px; right: 32px; bottom: 425px;
+  overflow: hidden; background: #1B3550;
+}
+.c1-stripes { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+.c1-stripes::before {
+  content: ''; position: absolute; top: 0; left: -22px; bottom: 0; width: 20px;
+  background: repeating-linear-gradient(to bottom, var(--navy) 0px, var(--navy) 4px, transparent 4px, transparent 10px);
+  opacity: 0.9;
+}
+.c1-stripes::after {
+  content: ''; position: absolute; top: 0; right: -22px; bottom: 0; width: 20px;
+  background: repeating-linear-gradient(to bottom, var(--navy) 0px, var(--navy) 4px, transparent 4px, transparent 10px);
+  opacity: 0.9;
+}
+.c1-band {
+  position: absolute; bottom: 0; left: 0; right: 0; height: 360px;
+  background: var(--navy); padding: 36px 44px 32px;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.c1-title {
+  font-size: 38px; font-weight: 800; line-height: 1.1;
+  color: var(--white); letter-spacing: -0.5px; max-width: 560px;
+}
+.c1-meta {
+  border-top: 1px solid rgba(255,255,255,0.18); padding-top: 14px;
+  display: flex; align-items: flex-end; justify-content: space-between;
+}
+.c1-byline { font-size: 9px; font-weight: 400; color: rgba(255,255,255,0.40); line-height: 1.7; }
+.c1-byline strong { display: block; font-weight: 600; color: rgba(255,255,255,0.65); margin-bottom: 2px; }
+.c1-year { font-size: 24px; font-weight: 300; color: rgba(255,255,255,0.10); letter-spacing: 3px; }
+
+/* ══════════════════════ COVER 2 - FULL-BLEED PHOTO, FROSTED LOWER PANEL ══════════════════════ */
+.c2 { width: 100%; height: 100%; position: relative; background: var(--navy); }
+.c2-photo { position: absolute; inset: 0; overflow: hidden; }
+.c2-scrim {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(13,27,47,0.30) 0%, rgba(13,27,47,0.05) 35%, rgba(13,27,47,0.55) 78%, rgba(13,27,47,0.92) 100%);
+}
+.c2-topbar {
+  position: absolute; top: 0; left: 0; right: 0;
+  padding: 30px 44px; display: flex; align-items: center; justify-content: space-between; z-index: 10;
+}
+.c2-eyebrow {
+  font-size: 9px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+}
+.c2-accent-rule {
+  position: absolute; left: 44px; right: 44px; bottom: 250px; height: 3px;
+  background: var(--accent); z-index: 10;
+}
+.c2-block {
+  position: absolute; left: 44px; right: 44px; bottom: 44px; z-index: 10;
+}
+.c2-title {
+  font-size: 40px; font-weight: 800; line-height: 1.08; color: var(--white);
+  letter-spacing: -0.6px; max-width: 560px; margin-bottom: 22px;
+}
+.c2-meta { display: flex; align-items: flex-end; justify-content: space-between; }
+.c2-byline { font-size: 9px; color: rgba(255,255,255,0.55); line-height: 1.7; }
+.c2-byline strong { display: block; font-weight: 700; color: rgba(255,255,255,0.85); letter-spacing: 0.5px; margin-bottom: 3px; }
+.c2-year {
+  font-size: 13px; font-weight: 700; letter-spacing: 2px;
+  color: var(--navy); background: var(--white); padding: 6px 14px;
+}
+
+/* ══════════════════════ COVER 3 - SPLIT VERTICAL: NAVY LEFT RAIL + PHOTO RIGHT ══════════════════════ */
+.c3 { width: 100%; height: 100%; display: flex; }
+.c3-rail {
+  width: 82mm; background: var(--navy); position: relative; flex-shrink: 0;
+  padding: 38px 34px; display: flex; flex-direction: column; color: var(--white);
+}
+.c3-rail::after {
+  content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 6px; background: var(--accent);
+}
+.c3-logo { margin-bottom: auto; }
+.c3-eyebrow {
+  font-size: 9px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 14px;
+}
+.c3-title {
+  font-size: 32px; font-weight: 800; line-height: 1.12; letter-spacing: -0.4px;
+  color: var(--white); margin-bottom: 18px;
+}
+.c3-sub { font-size: 9.5px; color: rgba(255,255,255,0.55); line-height: 1.75; margin-bottom: 34px; }
+.c3-meta { border-top: 1px solid rgba(255,255,255,0.18); padding-top: 16px; }
+.c3-meta strong { display: block; font-size: 9.5px; font-weight: 700; color: rgba(255,255,255,0.85); margin-bottom: 5px; letter-spacing: 0.4px; }
+.c3-meta span { font-size: 8.5px; color: rgba(255,255,255,0.42); line-height: 1.8; display: block; }
+.c3-year { font-size: 22px; font-weight: 300; letter-spacing: 3px; color: rgba(255,255,255,0.14); margin-top: 18px; }
+.c3-photo { flex: 1; position: relative; overflow: hidden; background: #1B3550; }
+
+/* ══════════════════════ COVER 4 - TOP NAVY HEADER, FRAMED PHOTO, WHITE FOOTER ══════════════════════ */
+.c4 { width: 100%; height: 100%; display: flex; flex-direction: column; background: var(--white); }
+.c4-header {
+  background: var(--navy); padding: 40px 44px 34px; position: relative;
+}
+.c4-header::after {
+  content: ''; position: absolute; left: 44px; bottom: 0; width: 60px; height: 4px; background: var(--accent);
+}
+.c4-logo { margin-bottom: 26px; }
+.c4-eyebrow {
+  font-size: 9px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+  color: rgba(255,255,255,0.55); margin-bottom: 12px;
+}
+.c4-title {
+  font-size: 34px; font-weight: 800; line-height: 1.1; color: var(--white);
+  letter-spacing: -0.5px; max-width: 520px; padding-bottom: 14px;
+}
+.c4-photo {
+  flex: 1; margin: 22px 44px; position: relative; overflow: hidden; background: #1B3550;
+  border: 1px solid #e4e0da;
+}
+.c4-photo::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--accent); z-index: 5;
+}
+.c4-footer {
+  padding: 0 44px 38px; display: flex; align-items: flex-end; justify-content: space-between;
+}
+.c4-byline { font-size: 9px; color: var(--gray); line-height: 1.7; }
+.c4-byline strong { display: block; font-weight: 700; color: var(--navy); margin-bottom: 3px; font-size: 9.5px; letter-spacing: 0.3px; }
+.c4-year { font-size: 26px; font-weight: 300; letter-spacing: 3px; color: #d8d4ce; }
+
+/* ══════════════════════ COVER 5 - MINIMAL EDITORIAL: SMALL DUOTONE PHOTO, BIG TYPE ══════════════════════ */
+.c5 { width: 100%; height: 100%; background: var(--white); position: relative; padding: 44px; display: flex; flex-direction: column; }
+.c5::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 14px; background: var(--navy);
+}
+.c5-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: auto; padding-top: 10px; }
+.c5-eyebrow {
+  font-size: 9px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--accent);
+}
+.c5-photo {
+  width: 100%; height: 250px; position: relative; overflow: hidden; background: #1B3550; margin-bottom: 30px;
+}
+.c5-photo::after {
+  content: ''; position: absolute; inset: 0; background: rgba(13,27,47,0.18); mix-blend-mode: multiply;
+}
+.c5-title {
+  font-size: 46px; font-weight: 800; line-height: 1.05; letter-spacing: -0.8px;
+  color: var(--navy); margin-bottom: 16px; max-width: 600px;
+}
+.c5-divider { width: 64px; height: 4px; background: var(--accent); margin-bottom: 20px; }
+.c5-meta { display: flex; align-items: flex-end; justify-content: space-between; border-top: 1px solid #e4e0da; padding-top: 18px; }
+.c5-byline { font-size: 9px; color: var(--gray); line-height: 1.7; }
+.c5-byline strong { display: block; font-weight: 700; color: var(--navy); margin-bottom: 3px; font-size: 9.5px; letter-spacing: 0.3px; }
+.c5-year { font-size: 28px; font-weight: 300; letter-spacing: 3px; color: #d8d4ce; }
+
+/* simple text logo stand-in (swap for <img src="https://raw.githubusercontent.com/skulkar8-debug/commercial-landscaping-report-2026/main/stoc-logo.png">) */
+.logo-mark { font-size: 17px; font-weight: 800; letter-spacing: 1px; }
+.logo-mark .dot { color: var(--accent); }
+.logo-light { color: var(--white); }
+.logo-dark { color: var(--navy); }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════
+     COVER 1  ·  reportcover.1  ·  ORIGINAL STYLE (unchanged layout)
+     ════════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="c1">
+
+    <div class="c1-logo">
+      <img src="https://raw.githubusercontent.com/skulkar8-debug/commercial-landscaping-report-2026/main/stoc-logo.png" style="height:36px;width:auto;display:block;"
+           onerror="this.outerHTML='&lt;span class=\'logo-mark logo-dark\'&gt;STOC&lt;span class=\'dot\'&gt;.&lt;/span&gt;&lt;/span&gt;'">
+    </div>
+
+    <div class="c1-photo">
+      <img class="cover-img" src="reportcover.1"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <div class="ph" style="display:none;">
+        <svg width="56" height="56" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="22" r="12" fill="rgba(255,255,255,0.15)"/>
+          <path d="M4 56c0-15.5 12.5-28 28-28s28 12.5 28 28" fill="rgba(255,255,255,0.12)"/>
+        </svg>
+        <div class="ph-lbl">reportcover.1</div>
+      </div>
+      <div class="c1-stripes"></div>
+    </div>
+
+    <div class="c1-band">
+      <div class="c1-title">U.S. Commercial Landscaping<br>Market Report 2026</div>
+      <div class="c1-meta">
+        <div class="c1-byline">
+          <strong>STOC Advisory &nbsp;&middot;&nbsp; Corporate Development Support</strong>
+          Baltimore, MD &nbsp;&middot;&nbsp; Dallas, TX &nbsp;&middot;&nbsp; Minneapolis, MN &nbsp;&middot;&nbsp; Nashville, TN &nbsp;&middot;&nbsp; Ponte Vedra Beach, FL
+        </div>
+        <div class="c1-year">2026</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     COVER 2  ·  reportcover.2  ·  FULL-BLEED PHOTO + GRADIENT SCRIM
+     ════════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="c2">
+    <div class="c2-photo">
+      <img class="cover-img" src="reportcover.2"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <div class="ph" style="display:none;">
+        <svg width="56" height="56" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="22" r="12" fill="rgba(255,255,255,0.15)"/>
+          <path d="M4 56c0-15.5 12.5-28 28-28s28 12.5 28 28" fill="rgba(255,255,255,0.12)"/>
+        </svg>
+        <div class="ph-lbl">reportcover.2</div>
+      </div>
+    </div>
+    <div class="c2-scrim"></div>
+
+    <div class="c2-topbar">
+      <img src="https://raw.githubusercontent.com/skulkar8-debug/commercial-landscaping-report-2026/main/stoc-logo.png" style="height:34px;width:auto;display:block;"
+           onerror="this.outerHTML='&lt;span class=\'logo-mark logo-light\'&gt;STOC&lt;span class=\'dot\'&gt;.&lt;/span&gt;&lt;/span&gt;'">
+      <div class="c2-eyebrow">Corporate Development Support</div>
+    </div>
+
+    <div class="c2-accent-rule"></div>
+    <div class="c2-block">
+      <div class="c2-title">U.S. Commercial Landscaping<br>Market Report 2026</div>
+      <div class="c2-meta">
+        <div class="c2-byline">
+          <strong>STOC Advisory &middot; Corporate Development Support</strong>
+          Baltimore, MD &nbsp;&middot;&nbsp; Dallas, TX &nbsp;&middot;&nbsp; Minneapolis, MN &nbsp;&middot;&nbsp; Nashville, TN &nbsp;&middot;&nbsp; Ponte Vedra Beach, FL
+        </div>
+        <div class="c2-year">2026</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     COVER 3  ·  reportcover.3  ·  VERTICAL SPLIT - NAVY RAIL + PHOTO
+     ════════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="c3">
+    <div class="c3-rail">
+      <div class="c3-logo">
+        <img src="https://raw.githubusercontent.com/skulkar8-debug/commercial-landscaping-report-2026/main/stoc-logo.png" style="height:34px;width:auto;display:block;"
+             onerror="this.outerHTML='&lt;span class=\'logo-mark logo-light\'&gt;STOC&lt;span class=\'dot\'&gt;.&lt;/span&gt;&lt;/span&gt;'">
+      </div>
+      <div class="c3-eyebrow">Market Report</div>
+      <div class="c3-title">U.S. Commercial Landscaping Market Report 2026</div>
+      <div class="c3-sub">A corporate-development screen of the U.S. commercial landscaping market - sourcing depth, competitive pressure, and acquisition-ready target prioritization.</div>
+      <div class="c3-meta">
+        <strong>STOC Advisory &middot; Corporate Development Support</strong>
+        <span>Baltimore, MD &nbsp;&middot;&nbsp; Dallas, TX &nbsp;&middot;&nbsp; Minneapolis, MN</span>
+        <span>Nashville, TN &nbsp;&middot;&nbsp; Ponte Vedra Beach, FL</span>
+        <div class="c3-year">2026</div>
+      </div>
+    </div>
+    <div class="c3-photo">
+      <img class="cover-img" src="reportcover.3"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <div class="ph" style="display:none;">
+        <svg width="56" height="56" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="22" r="12" fill="rgba(255,255,255,0.15)"/>
+          <path d="M4 56c0-15.5 12.5-28 28-28s28 12.5 28 28" fill="rgba(255,255,255,0.12)"/>
+        </svg>
+        <div class="ph-lbl">reportcover.3</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     COVER 4  ·  reportcover.4  ·  NAVY HEADER + FRAMED PHOTO + WHITE FOOTER
+     ════════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="c4">
+    <div class="c4-header">
+      <div class="c4-logo">
+        <img src="https://raw.githubusercontent.com/skulkar8-debug/commercial-landscaping-report-2026/main/stoc-logo.png" style="height:34px;width:auto;display:block;"
+             onerror="this.outerHTML='&lt;span class=\'logo-mark logo-light\'&gt;STOC&lt;span class=\'dot\'&gt;.&lt;/span&gt;&lt;/span&gt;'">
+      </div>
+      <div class="c4-eyebrow">Corporate Development Support</div>
+      <div class="c4-title">U.S. Commercial Landscaping Market Report 2026</div>
+    </div>
+
+    <div class="c4-photo">
+      <img class="cover-img" src="reportcover.4"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <div class="ph" style="display:none;">
+        <svg width="56" height="56" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="22" r="12" fill="rgba(255,255,255,0.15)"/>
+          <path d="M4 56c0-15.5 12.5-28 28-28s28 12.5 28 28" fill="rgba(255,255,255,0.12)"/>
+        </svg>
+        <div class="ph-lbl">reportcover.4</div>
+      </div>
+    </div>
+
+    <div class="c4-footer">
+      <div class="c4-byline">
+        <strong>STOC Advisory &middot; Corporate Development Support</strong>
+        Baltimore, MD &nbsp;&middot;&nbsp; Dallas, TX &nbsp;&middot;&nbsp; Minneapolis, MN &nbsp;&middot;&nbsp; Nashville, TN &nbsp;&middot;&nbsp; Ponte Vedra Beach, FL
+      </div>
+      <div class="c4-year">2026</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     COVER 5  ·  reportcover.5  ·  MINIMAL EDITORIAL - TOP RULE, BIG TYPE
+     ════════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="c5">
+    <div class="c5-top">
+      <img src="https://raw.githubusercontent.com/skulkar8-debug/commercial-landscaping-report-2026/main/stoc-logo.png" style="height:34px;width:auto;display:block;"
+           onerror="this.outerHTML='&lt;span class=\'logo-mark logo-dark\'&gt;STOC&lt;span class=\'dot\'&gt;.&lt;/span&gt;&lt;/span&gt;'">
+      <div class="c5-eyebrow">Market Report &middot; 2026</div>
+    </div>
+
+    <div class="c5-photo">
+      <img class="cover-img" src="reportcover.5"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <div class="ph" style="display:none;">
+        <svg width="56" height="56" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="22" r="12" fill="rgba(255,255,255,0.15)"/>
+          <path d="M4 56c0-15.5 12.5-28 28-28s28 12.5 28 28" fill="rgba(255,255,255,0.12)"/>
+        </svg>
+        <div class="ph-lbl">reportcover.5</div>
+      </div>
+    </div>
+
+    <div class="c5-title">U.S. Commercial Landscaping Market Report 2026</div>
+    <div class="c5-divider"></div>
+    <div class="c5-meta">
+      <div class="c5-byline">
+        <strong>STOC Advisory &middot; Corporate Development Support</strong>
+        Baltimore, MD &nbsp;&middot;&nbsp; Dallas, TX &nbsp;&middot;&nbsp; Minneapolis, MN &nbsp;&middot;&nbsp; Nashville, TN &nbsp;&middot;&nbsp; Ponte Vedra Beach, FL
+      </div>
+      <div class="c5-year">2026</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
